@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        body{
+            background: linear-gradient(to left, #8EC5FC, #E0C3FC);
+        }
+        .container{
+            width: 50%;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            padding: 8%;
+            width: 50vh;
+            height: 80vh;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .judul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            padding: 48px;
+
+        }
+        .form.data{
+            margin: 50px 20px;
+        }
+        .username, .password{
+            margin-bottom: 20px;
+        }
+        label, input{
+            width: 100%;
+            padding: 8px;
+            border: transparent;
+            border: transparent;
+            outline: transparent;
+
+        }
+        .btn_submit{
+            border: transparent;
+            padding: 20px;
+            background: linear-gradient(to left, #8EC5FC, #E0C3FC);
+            border-radius: 50px;
+            color: white;
+            
+        }
+        .btn_submit:hover{
+            cursor: pointer;
+            background: linear-gradient(to left, #7FBBFD, #B57CF9);
+        }
+        .forgot{
+            width: 100%;     
+            margin-top: 0;
+            color: #2a2a2a; 
+            font-size: 12px;
+            margin-bottom: 24px;
+            text-align: right;
+            
+         }
+         .signup{
+            width: 100%;  
+            margin-top: 24px;
+            color: #2a2a2a;
+            font-size: 12px;
+            text-align: center;  
+            
+         }
+         .logo{
+             margin-top: 24px;
+             display: flex;
+             justify-content: center;
+         }
+         .text{
+             text-align: center;
+             padding-top: 80px;
+             font-size: 12px;
+
+         }
+
+    </style>
+
+    <div class="container">
+        <div class="card">
+            <div class="judul">
+                <h1>Login</h1>
+            </div>
+            <form action="form.data" action="#">
+                <label id="username">Username<label>
+                <input type="text" class="username" placeholder="username">
+
+                <label for="password">Password</label>
+                <input type="password" class="password" placeholder="password">
+                <div class="forgot">
+                    <p>forgot password?</p>
+                </div>
+
+                <input type="submit" class="btn_submit" value="Login">
+                <div class="signup">
+                    <p>Or Sign Up Using</p>
+                </div>
+
+                <div class="logo">
+                    <img src="https://img.icons8.com/fluency/48/000000/google-plus.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/twitter-circled.png"/>
+                    <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+                </div>
+
+                <div class="text">
+                    <p>Or Sign Up Using Phone Number</p>
+                </div>
+                
+
+
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
